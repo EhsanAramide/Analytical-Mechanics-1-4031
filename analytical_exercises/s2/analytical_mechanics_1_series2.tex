@@ -1,0 +1,74 @@
+%!LW recipe=latexmk (xelatex)
+
+% See `LICENCE' file in root directory for more information
+% Only use XeLaTeX compiler 
+
+\documentclass{article}
+
+% Packages
+\usepackage{fancyhdr}
+\usepackage[a4paper, 
+top=1in,
+marginparwidth=0.6in,
+left=1in, right=0.75in]
+{geometry}
+
+\usepackage[headings=runin, 
+            skip-below={1\baselineskip},
+            counter-format={qu[1]-}]
+            {exsheets}
+\usepackage{enumitem}
+\usepackage{amsmath}
+
+\usepackage{xepersian}
+
+% Packages initializations
+% `xepersian'
+\settextfont[Scale=1]{XB Zar}
+\setlatintextfont[Scale=1]{Junicode}
+\setdigitfont{XB Zar}
+
+% `fancyhdr'
+\pagestyle{fancy}
+\fancyhf[HR]{سید امیر رضا طالقانی / احسان آرمیده}
+\fancyhf[HL]{مکانیک تحلیلی ۱ / تمرین سری ۲}
+\fancyhf[FC]{\thepage}
+
+\linespread{2}
+\SetupExSheets[question]{name=}
+
+
+\begin{document}
+\noindent
+\section*{سوالات}
+از فصل ۲ کتاب مکانیک تحلیلی (فولز ویراست ۷ام) سوالات روبه‌رو حل بشود:
+(فقط مورد «ب» سوالات ۱، ۲، ۳) / ۱۰ / (۱۲، ۱۳) / ۱۴
+\\
+
+\noindent
+{\large سوالات زیر نیز حل بشوند:}
+    \begin{question}
+        اگر یک پرتابه، از مرکز دستگاه مختصات، با سرعت اولیه‌ی $v_i$
+        به صورتی پرتاب شود که با افق زاویه‌ی $\alpha$
+        داشته باشد، آنگاه زمان مورد نیاز برای آنکه پرتابه از خط گذرا از مبدأ L
+        (که زاویه‌ی $\beta$ با افق دارد، به صورتی که $\beta < \alpha$ است)
+        عبور کند را محاسبه کنید.
+    \end{question}
+
+    \begin{question}
+        یک پرتابه با سرعت اولیه‌ی $v_i$ پرتاب می‌شود،
+        به صورتی که از دو نقطه، که هر دو در ارتفاع h از سطح افق قرار دارند،
+        عبور می‌کند.
+        اگر پرتاب‌کننده طوری تعیین شده باشد که بیشترین برد (range) را داشته باشد،
+        آنگاه نشان دهید در این حالت فاصله‌ی بین نقاط به صورت زیر نشان داده می‌شود:
+        $$
+            d = \frac{v_i}{g}\sqrt{v_i^2 - 4gh}
+        $$
+    \end{question}
+
+    \vspace{3cm}
+    مهلت ارسال: شنبه ۲۸ مهر، تا ساعت ۱۵:۱۲
+
+\end{document}
+
+
